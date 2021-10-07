@@ -1,5 +1,5 @@
 // Anti Sandbox - Non emulated API
-namespace ProRub
+namespace NonEmAPI
 {
 	public class Program
 	{
