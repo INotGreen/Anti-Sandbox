@@ -18,14 +18,11 @@ def xor(data, key):
 def printCiphertext(ciphertext):
 	print('{ 0x' + ', 0x'.join(hex(ord(x))[2:] for x in ciphertext) + ' };')
 
-
-
 try:
     plaintext = open(sys.argv[1], "rb").read()
 except:
     print("You didn't specify a file.. %s <raw payload file>" % sys.argv[0])
     sys.exit()
-
 
 ciphertext = xor(plaintext, KEY)
 print('{ 0x' + ', 0x'.join(hex(ord(x))[2:] for x in ciphertext) + ' };')
