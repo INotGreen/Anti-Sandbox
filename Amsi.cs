@@ -46,6 +46,6 @@ namespace amsi
 
             // Restore region to RX
             _ = VirtualProtect(asb, (UIntPtr)patch.Length, oldProtect, out uint _);
-         }
+        }
      }
 }
